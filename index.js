@@ -44,6 +44,7 @@ async function main() {
       throw error; // Re-throw Cloudflare-specific error
     }
     console.error("Error getting data:", error);
+    process.exit(1);
   }
 
 }
